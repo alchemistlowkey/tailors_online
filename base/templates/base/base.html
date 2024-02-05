@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Online Tailoring" />
+    <meta
+      name="keywords"
+      content="tailors, clothes, e-sewing, clothing, sew your clothes, tailoring, sewing, fabrics, textile, online sewing, tailor, eTailor, eTailoring, e-tailoring, fashion"
+    />
+    <meta name="author" content="Lucky Samuel" />
+
+    <!--Google Font link-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/main.css' %}"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/slick.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/slick-theme.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/animate.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/iconfont.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/font-awesome.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/bootstrap.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/magnific-popup.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/bootsnav.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/style2.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/style.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'base/responsive.css' %}"
+    />
+
+    {% if title %}
+    <title>Tailors Online - {{ title }}</title>
+    {% else %}
+    <title>Tailors Online</title>
+    {% endif %}
+
+    <script src="{% static 'base/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default bootsnav">
+      <div class="navbar-top bg-grey fixed-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="navbar-callus text-left sm-text-center">
+                <ul class="list-inline">
+                  <li>
+                    <a href="tel:+2348027513561"
+                      ><i class="fa fa-phone"></i> Call us: +234 802 751 3561</a
+                    >
+                  </li>
+                  <li>
+                    <a href=""
+                      ><i class="fa fa-whatsapp"></i> WhatsApp us: +234 903 500
+                      7570</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:info@thetailorsonline.com"
+                      ><i class="fa fa-envelope-o"></i> Contact us:
+                      info@tailorsonline.tech</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="navbar-social text-right sm-text-center">
+                <ul class="list-inline">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/thetailorsonline"
+                      target="_blank"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/thetailorsonline/"
+                      target="_blank"
+                      ><i class="fa fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/tailorsonline" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.pinterest.com/thetailorsonline/"
+                      target="_blank"
+                      ><i class="fa fa-pinterest"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#navbar-menu"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img
+              src="{% static 'base/images/logo2.jpg' %}"
+              class="logo"
+              alt="Logo of The Tailors Online"
+            />
+            <!--<img src="assets/images/logo.jpg" class="logo logo-scrolled" alt="Logo of the tailors online">-->
+          </a>
+        </div>
+        <!-- End Header Navigation -->
+
+        <!-- navbar menu -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Get Started</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#product">Portfolio</a></li>
+            <li><a href="#about-us">About Us</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer id="contact" class="footer action-lage bg-black p-top-80">
+      <!--<div class="action-lage"></div>-->
+      <div class="container">
+        <div class="row">
+            <div class="widget_area">
+                <div class="col-md-4">
+                    <div class="widget_item widget_about">
+                      <h5 class="text-white">About Us</h5>
+                      <p id="about-us" class="m-top-20">
+                        We are an online platform that helps people connect to numerous fashion designers/tailors out there to get the best out of fashion with ease.
+                      </p>
+                      <div class="widget_ab_item m-top-30">
+                        <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
+                        <div class="widget_ab_item_text">
+                            <h6 id="contact-us" class="text-white">Location</h6>
+                            <p>Lagos, Nigeria.
+                            </p>
+                        </div>
+                      </div>
+                      <div class="widget_ab_item m-top-30">
+                        <div class="item_icon"><i class="fa fa-phone"></i></div>
+                            <div class="widget_ab_item_text">
+                                <h6 class="text-white">Phone :</h6>
+                                <p>+234 802 751 3561</p>
+                            </div>
+                      </div>
+                      <div class="widget_ab_item m-top-30">
+                        <div class="item_icon"><i class="fa fa-whatsapp"></i></div>
+                        <div class="widget_ab_item_text">
+                            <h6 class="text-white">WhatsApp :</h6>
+                            <p>+234 903 500 7570</p>
+                        </div>
+                      </div>
+                      <div class="widget_ab_item m-top-30">
+                        <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
+                        <div class="widget_ab_item_text">
+                            <h6 class="text-white">Email Address :</h6>
+                            <p>info@tailorsonline.com</p>
+                        </div>
+                      </div>
+                    </div><!-- End of widget item -->
+                </div><!-- End of col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="widget_item widget_newsletter sm-m-top-50">
+                        <h5 class="text-white">Newsletter</h5>
+                        <form class="form-inline m-top-30" method="post" action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter your Email">
+                                <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>
+                            </div>
+                        </form>
+
+                        <ul class="list-inline m-top-20">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.pinterest.com/thetailorsonline/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div><!-- End off widget item -->
+                </div><!-- End off col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="widget_item sm-m-top-50">
+                        <h5 class="text-white">Our Services</h5>
+                        <p><strong>This includes:</strong></p>
+                        <ul class="list-block m-top-20">
+                            <li>Access to a large database of fashion designers.</li><br>
+                            <li>Selling of quality fabrics.</li><br>
+                            <li>Quality Designs</li><br>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div><!-- End off widget item -->
+                </div><!-- End off col-md-4 -->
+            </div>
+        </div>
+      </div>
+      <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+          <div class="col-md-12">
+              <p class="wow fadeInRight" data-wow-duration="1s">
+                  &copy;2024. Tailors Online. All Rights Reserved.
+              </p>
+          </div>
+      </div>
+    </footer>
+
+
+    <!-- JS includes -->
+
+    <script src="{% static 'js/vendor/jquery-1.11.2.min.js' %}"></script>
+    <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'slick/slick.js' %}"></script>
+    <script src="{% static 'slick/slick.min.js' %}"></script>
+    <script src="{% static 'js/jquery.collapse.js' %}"></script>
+    <script src="{% static 'js/bootsnav.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/measure.js' %}"></script>
+    <script src="{% static 'js/user.js' %}"></script>
+  </body>
+</html>

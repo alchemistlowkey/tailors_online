@@ -1,0 +1,163 @@
+.bg-dark-grey{background-color: #545454;}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width: 95%;
+    color: white;
+	margin: 0px auto;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+.form, .content {
+    width: 50%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+legend {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.input-group label {
+    display: block;
+    text-align: center;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.success {
+    color: #3c763d;
+    background: #dff0d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+}
+
+.button {
+	margin-left: 4px;
+	width: 6em;
+	height: 4em;
+}
+
+.grey-bg {
+	background: grey;
+}
+
+.user {
+	width: 100%;
+    margin: 0px auto;
+    padding: 5px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.measure {
+	text-align: left;
+}
+
+.form-2 {
+	width: 95%;
+    margin: 0px auto;
+    padding: 5px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.input-group-2 {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group-2 label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group-2 input {
+    height: 35px;
+    width: 30%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.input-group-3 {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group-3 label {
+    display: inline;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group-3 input {
+    height: 35px;
+    width: 30%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/*
+.error {
+	color: #FF0000;
+}
+*/
+
+.echo-m {
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+
+.image-m img {
+	width: 100%;
+	height: 5%;
+}
+
+.left-align{
+	text-align: left;
+	font-size: 15px;
+}
