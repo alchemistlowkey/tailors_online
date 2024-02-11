@@ -93,7 +93,7 @@
   </head>
   <body>
     <nav class="navbar navbar-default bootsnav">
-      <div class="navbar-top bg-grey fixed-top">
+      <div class="navbar-top bg-lgreen fixed-top">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -170,7 +170,7 @@
           >
             <i class="fa fa-bars"></i>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="{% url 'base-home' %}">
             <img
               src="{% static 'base/images/logo2.jpg' %}"
               class="logo"
@@ -184,18 +184,33 @@
         <!-- navbar menu -->
         <div class="collapse navbar-collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Get Started</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#product">Portfolio</a></li>
-            <li><a href="#about-us">About Us</a></li>
+            <li><a href="{% url 'base-home' %}">Home</a></li>
+            {% if user.is_authenticated %}
+              <li><a href="{% url 'measurement_form' %}">Get measured</a></li>
+              <li><a href="{% url 'profile' %}">Profile</a></li>
+              <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+              <li><a href="{% url 'register' %}">Register</a></li>
+              <li><a href="{% url 'measurement_form' %}">Guest</a></li>
+              <li><a href="{% url 'login' %}">Login</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#about-us">About Us</a></li>
+            {% endif %}            
           </ul>
         </div>
         <!-- /.navbar-collapse -->
       </div>
     </nav>
 
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
     {% block content %}{% endblock %}
+    {% block product %}{% endblock product %}
 
     <footer id="contact" class="footer action-lage bg-black p-top-80">
       <!--<div class="action-lage"></div>-->
@@ -234,7 +249,7 @@
                         <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
                         <div class="widget_ab_item_text">
                             <h6 class="text-white">Email Address :</h6>
-                            <p>info@tailorsonline.com</p>
+                            <p>info@tailorsonline.tech</p>
                         </div>
                       </div>
                     </div><!-- End of widget item -->

@@ -4,6 +4,7 @@
     <!--Home Sections-->
 
     <section id="home" class="home bg-black fix">
+        {% comment %} <img src="{% static 'images/home-bg.jpg' %}" alt="Home Background"> {% endcomment %}
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -13,12 +14,12 @@
                             <div class="slid_item">
                                 <div class="home_text ">
                                     <h2 class="text-white">Welcome to <strong>Tailors Online</strong></h2>
-                                    <h1 class="text-white">We Do Business All the Time</h1>
-                                    <h3 class="text-white"> We Create a <strong>Concept</strong> into The Market </h3>
+                                    <h1 class="text-white">We are your one-stop shop for all things Tailoring</h1>
+                                    <h3 class="text-white">Click on the <strong>button</strong> below lets get you measured</h3>
                                 </div>
 
                                 <div class="home_btns m-top-40">
-                                    <a href="#" class="btn btn-primary m-top-20">Take a Tour</a>
+                                    <a href="{% url 'measurement_form' %}" class="btn btn-primary m-top-20">Get started as a guest user</a>
                                     <a href="#" class="btn btn-default m-top-20">Lets get you measured</a>
                                 </div>
                             </div><!-- End off slid item -->
@@ -31,7 +32,7 @@
                                 </div>
 
                                 <div class="home_btns m-top-40">
-                                    <a href="#" class="btn btn-primary m-top-20">Take a Tour</a>
+                                    <a href="{% url 'register' %}" class="btn btn-primary m-top-20">Get started as a registered user</a>
                                     <a href="#" class="btn btn-default m-top-20">Lets get you measured</a>
                                 </div>
                             </div><!-- End off slid item -->
@@ -67,9 +68,9 @@
                                     <div class="col-sm-3">
                                         <div class="port_item xs-m-top-30">
                                             <div class="port_img">
-                                                <img src="{% static 'images/work-img1.jpg' %}" alt="" />
+                                                <img src="{% static 'images/dis1.jpg' %}" alt="" />
                                                 <div class="port_overlay text-center">
-                                                    <a href="{% static 'images/work-img1.jpg' %}" class="popup-img">+</a>
+                                                    <a href="{% static 'images/dis1.jpg' %}" class="popup-img">+</a>
                                                 </div>
                                             </div>
                                             <div class="port_caption m-top-20">
@@ -81,9 +82,9 @@
                                     <div class="col-sm-3">
                                         <div class="port_item xs-m-top-30">
                                             <div class="port_img">
-                                                <img src="{% static 'images/work-img2.jpg' %}" alt="" />
+                                                <img src="{% static 'images/dis2.jpg' %}" alt="" />
                                                 <div class="port_overlay text-center">
-                                                    <a href="{% static 'images/work-img2.jpg' %}" class="popup-img">+</a>
+                                                    <a href="{% static 'images/dis2.jpg' %}" class="popup-img">+</a>
                                                 </div>
                                             </div>
                                             <div class="port_caption m-top-20">
@@ -95,9 +96,9 @@
                                     <div class="col-sm-3">
                                         <div class="port_item xs-m-top-30">
                                             <div class="port_img">
-                                                <img src="{% static 'images/work-img3.jpg' %}" alt="" />
+                                                <img src="{% static 'images/dis3.jpg' %}" alt="" />
                                                 <div class="port_overlay text-center">
-                                                    <a href="{% static 'images/work-img3.jpg' %}" class="popup-img">+</a>
+                                                    <a href="{% static 'images/dis3.jpg' %}" class="popup-img">+</a>
                                                 </div>
                                             </div>
                                             <div class="port_caption m-top-20">
@@ -109,9 +110,9 @@
                                     <div class="col-sm-3">
                                         <div class="port_item xs-m-top-30">
                                             <div class="port_img">
-                                                <img src="{% static 'images/work-img4.jpg' %}" alt="" />
+                                                <img src="{% static 'images/dis4.jpg' %}" alt="" />
                                                 <div class="port_overlay text-center">
-                                                    <a href="{% static 'images/work-img4.jpg' %}" class="popup-img">+</a>
+                                                    <a href="{% static 'images/dis4.jpg' %}" class="popup-img">+</a>
                                                 </div>
                                             </div>
                                             <div class="port_caption m-top-20">
@@ -263,9 +264,9 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div><!-- End off row -->
-        </div><!-- End off container -->
-    </section><!-- End off Product section -->
+            </div><!-- End of row -->
+        </div><!-- End of container -->
+    </section><!-- End of Product section -->
 
     <!--Brand Section-->
     <section id="brand" class="brand fix roomy-80">
@@ -278,39 +279,38 @@
                 <div class="main_brand text-center">
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/cbrand-img1.png' %}" alt="" />
+                            <img src="{% static 'images/fab1.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/cbrand-img2.png' %}" alt="" />
+                            <img src="{% static 'images/fab2.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/cbrand-img3.png' %}" alt="" />
+                            <img src="{% static 'images/fab3.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/cbrand-img4.png' %}" alt="" />
+                            <img src="{% static 'images/fab4.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/cbrand-img5.png' %}" alt="" />
+                            <img src="{% static 'images/fab5.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/cbrand-img6.png' %}" alt="" />
+                            <img src="{% static 'images/fab6.jpg' %}" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section><!-- End off Brand section -->
-
 
     <!-- contact section -->
     <section id="contact" class="section">
@@ -321,6 +321,7 @@
             <p>We are happy to talk you through on how to get started with taking of your measurements or run live demos for those wishing to see how it's been done and what it is to use our services.</p>
             <div id="message"></div>
             <form method="post" action="" name="cform" id="cform">
+                {% csrf_token %}
               <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
               <input name="email" id="email" type="email" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
               <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message Details..."></textarea>
