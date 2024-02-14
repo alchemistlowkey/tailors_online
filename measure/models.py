@@ -8,3 +8,6 @@ class UserMeasurement(models.Model):
     chest_size = models.FloatField()
     waist_size = models.FloatField()
     # Add other measurement fields as needed
+    def __str__(self):
+        return f'{self.user.username} UserMeasurement'
+    

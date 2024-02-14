@@ -4,7 +4,7 @@
     <!--Home Sections-->
 
     <section id="home" class="home bg-black fix">
-        {% comment %} <img src="{% static 'images/home-bg.jpg' %}" alt="Home Background"> {% endcomment %}
+        <!-- <img src="{% static 'images/home-bg.jpg' %}" alt="Home Background"> -->
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
@@ -279,32 +279,32 @@
                 <div class="main_brand text-center">
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/fab1.jpg' %}" alt="" />
+                            <img src="{% static 'images/fab10.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/fab2.jpg' %}" alt="" />
+                            <img src="{% static 'images/fab12.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/fab3.jpg' %}" alt="" />
+                            <img src="{% static 'images/fab13.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/fab4.jpg' %}" alt="" />
+                            <img src="{% static 'images/fab14.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/fab5.jpg' %}" alt="" />
+                            <img src="{% static 'images/fab11.jpg' %}" alt="" />
                         </div>
                     </div>
                     <div class="col-md-2 col-sm-4 col-xs-6">
                         <div class="brand_item sm-m-top-20">
-                            <img src="{% static 'images/fab6.jpg' %}" alt="" />
+                            <img src="{% static 'images/fab9.jpg' %}" alt="" />
                         </div>
                     </div>
                 </div>
@@ -314,23 +314,23 @@
 
     <!-- contact section -->
     <section id="contact" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 conForm">
-            <h5>Tailor Us An Email</h5>
-            <p>We are happy to talk you through on how to get started with taking of your measurements or run live demos for those wishing to see how it's been done and what it is to use our services.</p>
-            <div id="message"></div>
-            <form method="post" action="" name="cform" id="cform">
-                {% csrf_token %}
-              <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
-              <input name="email" id="email" type="email" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
-              <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message Details..."></textarea>
-              <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
-              <div id="simple-msg"></div>
-            </form>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 conForm">
+                    <h5>Tailor Us An Email</h5>
+                    <p>We are happy to talk you through on how to get started with taking of your measurements or run live demos for those wishing to see how it's been done and what it is to use our services.</p>
+                    <div id="message"></div>
+                    <form method="post" action="" name="cform" id="cform">
+                        {% csrf_token %}
+                        <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." required>
+                        <input name="email" id="email" type="email" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." required>
+                        <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message Details..." required></textarea>
+                        <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
+                        <div id="simple-msg"></div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <!-- End of contact section -->
 
