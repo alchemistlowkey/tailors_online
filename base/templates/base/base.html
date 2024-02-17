@@ -259,6 +259,7 @@
                     <div class="widget_item widget_newsletter sm-m-top-50">
                         <h5 class="text-white">Newsletter</h5>
                         <form class="form-inline m-top-30" method="post" action="#">
+				{% csrf_token %}
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Enter your Email">
                                 <button type="submit" class="btn text-center"><i class="fa fa-arrow-right"></i></button>

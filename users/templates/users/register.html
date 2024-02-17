@@ -1,5 +1,7 @@
 {% extends "base/base.html" %}
 {% load static %}
+{% load tailwind_filters %}
+{% load widget_tweaks %}
 {% load crispy_forms_tags %}
 {% block content %}
 
@@ -10,7 +12,7 @@
                 {% csrf_token %}
                 <fieldset class="form-group">
                     <legend class="border-bottom mb-4 text-center text-black">Join Today</legend>
-                    {{ form|crispy }}
+		    {{ form|crispy }}
                 </fieldset>
                 <div class="form-group text-center">
                     <button class="btn btn-outline-info text-primary" type="submit">Sign Up</button>

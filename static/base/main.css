@@ -1,0 +1,30 @@
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.bg-magenta {
+  background-color: #ffbd59;
+}
+
+.bg-dark-grey {
+    background-color: #545454;
+}
+
+.bg-gray {
+    background-color: #a6a6a6;
+}
+
+.bg-lgreen {
+  background-color: #5f788a;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
