@@ -83,6 +83,14 @@
       href="{% static 'base/responsive.css' %}"
     />
 
+    <style>
+      .home {
+          background-image: url("{% static 'images/home-bg.jpg' %}");
+          background-size: contain;
+          background-repeat: no-repeat;
+      }
+    </style>
+
     {% if title %}
     <title>Tailors Online - {{ title }}</title>
     {% else %}
