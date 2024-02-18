@@ -878,7 +878,6 @@ Home Section style
 
 .home{
     background: url("{% static 'images/home-bg.jpg' %}") no-repeat scroll;
-    background-color: #00a885;
     background-size: contain;
     position: relative;
     padding-top: 300px;
