@@ -8,9 +8,12 @@ To learn more about the journey and insights gained during the development of Ta
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/lucky-samuel/) for collaboration and further discussions.
 
-![2024-02-24](https://github.com/alchemistlowkey/tailors_online/assets/46524038/83e7c25a-5a7c-42f3-8a47-4ffabed08dcd)
-![2024-02-24 (2)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/a04dca8a-cf9e-4229-9ecb-73937ff2e45f)
-![2024-02-24 (3)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/c4c03d99-3718-4ef9-85e5-21f6e1887f4a)
+
+![2024-02-24 (4)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/5764411f-8f24-470f-9d4b-0de6369979b7)
+![2024-02-24 (5)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/0042d379-7db3-44be-a168-1fd83b8cada9)
+![2024-02-24 (6)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/3fd1f0f2-27ed-418f-a341-d6d5aa97cbca)
+
+
 
 ## Installation
 
@@ -29,6 +32,7 @@ To run this project locally, follow these steps:
 3. Install dependencies:
    ```
    # Assuming you have Python and pip installed
+   
    pip install -r requirements.txt
    ```
 
@@ -39,7 +43,7 @@ To run this project locally, follow these steps:
 
 5. Run the development server:
    ```
-   python manage.py runserver
+   python3 manage.py runserver
    ```
 
 6. Open the App in Your Browser: Visit http://localhost:8000 in your web browser.
