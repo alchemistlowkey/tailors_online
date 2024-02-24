@@ -48,6 +48,10 @@ To run this project locally, follow these steps:
 
 6. Open the App in Your Browser: Visit http://localhost:8000 in your web browser.
 
+### Deployment
+
+This project was deployed on the ALX server using NGINX for a robust and efficient hosting environment.
+
 ### Usage
 
 Tailors Online offers a user-friendly interface to connect both users and tailors. Users can create profiles, access their data, and utilize the measurement page for a tailored experience. The project utilizes HTML5, CSS3, and JavaScript for the frontend, while Django powers the backend.
