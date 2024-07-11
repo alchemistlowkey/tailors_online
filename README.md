@@ -8,7 +8,6 @@ To learn more about the journey and insights gained during the development of Ta
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/lucky-samuel/) for collaboration and further discussions.
 
-
 ![2024-02-24 (4)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/5764411f-8f24-470f-9d4b-0de6369979b7)
 ![2024-02-24 (5)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/0042d379-7db3-44be-a168-1fd83b8cada9)
 ![2024-02-24 (6)](https://github.com/alchemistlowkey/tailors_online/assets/46524038/3fd1f0f2-27ed-418f-a341-d6d5aa97cbca)
@@ -20,33 +19,38 @@ Connect with me on [LinkedIn](https://www.linkedin.com/in/lucky-samuel/) for col
 To run this project locally, follow these steps:
 
 1. Clone the repository:
-   ```
+
+   ```bash
    git clone https://github.com/alchemistlowkey/tailors_online.git
    ```
 
 2. Navigate to the project directory:
-   ```
+
+   ```bash
    cd tailors_online
    ```
 
 3. Install dependencies:
-   ```
+
+   ```bash
    # Assuming you have Python and pip installed
    
    pip install -r requirements.txt
    ```
 
 4. Apply migrations:
-   ```
+
+   ```bash
    python3 manage.py migrate
    ```
 
 5. Run the development server:
-   ```
+
+   ```bash
    python3 manage.py runserver
    ```
 
-6. Open the App in Your Browser: Visit http://localhost:8000 in your web browser.
+6. Open the App in Your Browser: Visit <http://localhost:8000> in your web browser.
 
 ### Deployment
 
@@ -66,17 +70,20 @@ Contributions are welcome! Please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature:
-   ```
+
+   ```bash
    git checkout -b feature-name
    ```
 
 3. Make your changes and commit them:
-   ```
+
+   ```bash
    git commit -m "Your message here"
    ```
 
 4. Push to the branch:
-   ```
+
+   ```bash
    git push origin feature-name
    ```
 
@@ -98,7 +105,6 @@ Amidst the struggle, a pivotal moment arrived with the ALX Software Engineering 
 
 Tailors Online is a solo endeavor that strives to bridge the gap between users and talented tailors. The website, built with HTML5, CSS3, and JavaScript on the frontend, and powered by Django on the backend, offers a responsive and user-friendly experience.
 
-
 ## Next Iteration
 
 As I reflect on this journey, the next iteration envisions smoother deployment processes, enhanced user experiences, and perhaps exploring additional technologies like React and ASP.NET.
@@ -108,7 +114,6 @@ As I reflect on this journey, the next iteration envisions smoother deployment p
 - [Twitter](https://twitter.com/alchemistlowkey)
 - [GitHub](https://github.com/alchemistlowkey)
 - [LinkedIn](https://www.linkedin.com/in/lucky-samuel/)
-
 
 This project is a testament to perseverance, technical learning, and the synergy between a personal journey and a learning opportunity. Through Tailors Online, I hope to inspire collaboration, innovation, and a shared passion for technology and creativity.
 

@@ -1,0 +1,3 @@
+from typing import Any, Callable
+
+def config(key: str, default: Any = None, cast: Callable[[Any], Any] = None) -> Any: ...

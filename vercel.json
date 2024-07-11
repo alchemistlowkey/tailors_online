@@ -1,0 +1,16 @@
+{
+    "builds": [
+      {
+        "src": "tailors_online/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb" }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "tailors_online/wsgi.py"
+      }
+    ]
+  }
+  
